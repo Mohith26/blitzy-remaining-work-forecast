@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blitzy Platform · Project guide · Remaining work forecast (concept)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <img class="logo" src="assets/blitzy-logo.svg" alt="Blitzy">
+  <div class="ws-select">Workspace <i data-lucide="chevron-down"></i></div>
+  <div class="spacer"></div>
+  <div class="usage"><span class="pct"><i data-lucide="code-xml"></i>5.4%</span><span><b>134.6K</b><span class="of" style="padding:0 0 0 4px">/ 2.5M</span></span></div>
+  <div class="icon-btn"><i data-lucide="circle-help"></i></div>
+  <div class="icon-btn"><i data-lucide="settings"></i></div>
+  <div class="user"><div class="avatar">D</div><div><div class="name">Dana</div><div class="plan">Enterprise</div></div><i data-lucide="chevron-down"></i></div>
+</header>
+
+<main>
+  <section class="card project-head">
+    <div class="title-row">
+      <h1 id="proj-title">AWS CardDemo COBOL-to-Java Migration</h1>
+      <span class="chip success"><i data-lucide="circle-check"></i>Refactor PR ready</span>
+      <div class="actions">
+        <button class="btn primary"><i data-lucide="git-merge"></i>Merge PR</button>
+        <div class="icon-btn"><i data-lucide="download"></i></div>
+        <div class="icon-btn"><i data-lucide="users"></i></div>
+        <div class="icon-btn"><i data-lucide="ellipsis"></i></div>
+      </div>
+    </div>
+    <div class="meta">
+      <div><div class="k">Source + Destination</div><a class="v" id="meta-src" target="_blank" rel="noopener"></a></div>
+      <div><div class="k">Engineering hours saved</div><div class="v plain" id="meta-saved"></div></div>
+      <div><div class="k">Code generation rules</div><div class="v">Explainability <span class="chip brand" style="height:20px">+2</span></div></div>
+      <div><div class="k" style="display:flex;align-items:center;gap:8px">Remaining work forecast <span class="chip purple" style="height:18px;font-size:11px"><i data-lucide="sparkles"></i>New</span></div><a class="v" href="#forecast" id="meta-fc"></a></div>
+    </div>
+    <nav class="stepper">
+      <div class="step"><span class="num">1</span>Codebase context</div><div class="step-line"></div>
+      <div class="step"><span class="num">2</span>Tech spec</div><div class="step-line"></div>
+      <div class="step"><span class="num">3</span>Build prompt</div><div class="step-line"></div>
+      <div class="step"><span class="num">4</span>Target tech spec</div><div class="step-line"></div>
+      <div class="step"><span class="num">5</span>Code</div><div class="step-line"></div>
+      <div class="step active"><span class="num">6</span>Project guide</div>
+    </nav>
+  </section>
+
+  <section class="card guide">
+    <aside class="toc">
+      <div class="toc-head">Contents <i data-lucide="panel-left-close"></i></div>
+      <a href="#s1">1. Executive Summary</a>
+      <a class="l2" href="#s11">1.1 Project Overview</a>
+      <a class="l2 on" href="#s12">1.2 Completion Status</a>
+      <a class="l2" href="#s12">1.3 Key Accomplishments</a>
+      <a class="l2" href="#s12">1.4 Critical Unresolved Issues</a>
+      <a class="l2" href="#s12">1.5 Access Issues</a>
+      <a class="l2" href="#s12">1.6 Recommended Next Steps</a>
+      <a href="#s2">2. Project Hours Breakdown</a>
+      <a class="l2" href="#s22">2.2 Remaining Work Detail</a>
+      <a class="l2" href="#s23">2.3 Forecast Calibration <span class="chip purple">New</span></a>
+      <a href="#s2">3. Test Results</a>
+      <a href="#s2">4. Runtime Validation &amp; UI Verification</a>
+      <a href="#s2">5. Compliance &amp; Quality Review</a>
+      <a href="#s2">6. Risk Assessment</a>
+      <a href="#s2">7. Visual Project Status</a>
+      <a href="#s2">8. Summary &amp; Recommendations</a>
+      <a href="#s2">9. Development Guide</a>
+      <div class="toc-actions">
+        <a href="#"><i data-lucide="download"></i>Download PDF</a>
+        <a href="#"><i data-lucide="external-link"></i>Open Blitzy AI PR</a>
+      </div>
+    </aside>
+
+    <article class="doc">
+      <div class="markdown-body">
+        <h1 id="s1">Blitzy Project Guide</h1>
+        <h3 id="s11">1.1 Project Overview</h3>
+        <p id="overview" class="clamp"></p><a href="#" id="more" class="more">Show more</a>
+
+        <h3 id="s12">1.2 Completion Status</h3>
+        <div class="two-col">
+          <div><p id="status-line"></p><table id="status-table"></table></div>
+          <div class="fc" id="forecast">
+            <div class="fc-head"><span class="t">Remaining work forecast</span><span class="chip purple"><i data-lucide="sparkles"></i>New</span>
+              <div class="seg"><button data-level="0.8">80%</button><button data-level="0.9">90%</button><button data-level="0.95">95%</button></div></div>
+            <div class="sub" style="margin-top:2px">How long the human 20% is likely to take, calibrated on how long the same kinds of tasks took on past projects</div>
+            <div class="fc-stats">
+              <div><div class="k">Guide estimate</div><div class="v" id="s-est"></div><div class="n" id="s-est-n"></div></div>
+              <div><div class="k">Calibrated median</div><div class="v brand" id="s-med"></div><div class="n" id="s-med-n"></div></div>
+              <div><div class="k"><span class="lvl"></span> range</div><div class="v" id="s-rng"></div><div class="n">valid for the whole project</div></div>
+              <div><div class="k">Biggest swing</div><div class="v" style="font-size:15px;line-height:20px;margin-top:6px" id="top-task"></div><div class="n">closing it first cuts the top of the range by <strong id="top-drop"></strong></div></div>
+            </div>
+            <div class="fc-body">
+              <div class="cdf" id="cdf"></div>
+              <div class="target"><div class="k">Chance the remaining work is done within <strong id="t-val" style="color:#000"></strong></div>
+                <div class="big" id="t-big"></div><div class="line" id="t-line"></div>
+                <input type="range" id="target" min="10" max="120" step="2" value="40"><div class="ticks"><span>10h</span><span>120h</span></div></div>
+            </div>
+            <div class="fc-foot"><i data-lucide="shield-check"></i>Calibrated on <strong id="cal-n" style="color:#333"></strong>&nbsp;projects merged <span id="cal-dates"></span><span class="dot"></span>held-out coverage <strong id="rs-proj" style="color:#333">…</strong> at <span class="lvl"></span> (<span id="rs-R">40</span> re-splits)</div>
+          </div>
+        </div>
+
+        <h2 id="s2">2. Project Hours Breakdown</h2>
+        <h3 id="s22">2.2 Remaining Work Detail</h3>
+        <table>
+          <thead><tr><th>Category</th><th class="num">Hours</th><th>Priority</th><th>Calibrated <span class="lvl"></span> range <span class="chip purple" style="height:18px;font-size:11px;margin-left:4px">New</span></th><th></th><th>Range impact</th></tr></thead>
+          <tbody id="rw-body"></tbody>
+        </table>
+        <div class="legend"><span><i style="width:2px;height:12px;background:#333"></i>Guide estimate</span><span><i style="width:9px;height:9px;border-radius:50%;background:#5b39f3"></i>Bias-corrected forecast</span><span><i style="width:18px;height:8px;border-radius:4px;background:#d4cbfc"></i>Conformal range (per category)</span><span>Range impact: how far the project’s upper bound drops once the task is done. Adding the task ranges instead would give <strong id="sum-range" style="color:#333"></strong>.</span></div>
+
+        <h3 id="s23">2.3 Forecast Calibration</h3>
+        <div class="grid2">
+          <div class="panel"><div class="t">Did the <span class="lvl"></span> ranges hold on newer projects?</div>
+            <div class="s">Fit on the <span id="train-n"></span> oldest projects, calibrated on the next <span class="cal-n2"></span>, scored on the <span id="bt-n"></span> most recent (<span id="bt-dates"></span>). Black tick = promised coverage.</div>
+            <div id="bt-rows" style="margin-top:6px"></div>
+            <div class="note"><i data-lucide="lightbulb"></i><div>Tasks in one project overrun together (same environment, same approvers, same customer process), so independent simulation is too narrow: <strong id="bt-ind"></strong> coverage here, <strong id="rs-ind">…</strong> on average. Calibrating the total as one unit holds the promise: <strong id="bt-proj"></strong> on this split (sampling error <span id="bt-se"></span>). The guide’s single number held on <strong id="bt-hit"></strong> of projects.</div></div>
+          </div>
+          <div class="panel"><div class="t">Calibration across confidence levels</div>
+            <div class="s">Average held-out coverage over <span class="rsR">40</span> random re-splits. <span style="color:#5b39f3">●</span> project-level conformal &nbsp;<span style="color:#d4cbfc">●</span> independent simulation &nbsp;– – perfect calibration</div>
+            <div class="curve" id="curve"></div>
+            <div class="s" style="margin-top:4px">Per-task ranges cover <strong id="rs-task" style="color:#333">…</strong> at <span class="lvl"></span> (latest split <span id="bt-task"></span>). History: <span id="corpus-n"></span> public Blitzy Project Guides, <span id="corpus-tasks"></span> remaining-work rows; completion hours are simulated.</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+<footer class="disclaimer">Unofficial concept demo by Mohith Gajjela. Not affiliated with Blitzy. Task names, estimates and priorities come from public Blitzy Project Guides on GitHub; actual completion hours are synthetic.</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
