@@ -197,7 +197,7 @@ function renderBacktest(L) {
 }
 
 function drawCurve(L) {
-  const W = Math.max(320, Math.round($('#curve').clientWidth || 420)), Ht = 230, l = 40, r = 12, t = 12, b = 36;
+  const W = Math.max(320, Math.round($('#curve').clientWidth || 420)), Ht = 230, l = 40, r = 20, t = 12, b = 36;
   const lo = 0.4, X = v => l + (W - l - r) * (v - lo) / (1 - lo), Y = v => t + (Ht - t - b) * (1 - (v - lo) / (1 - lo));
   const ticks = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
   const grid = ticks.map(v => `<line x1="${l}" x2="${W - r}" y1="${Y(v)}" y2="${Y(v)}" stroke="#e9e9e9"/><text class="axis" x="${l - 6}" y="${Y(v) + 4}" text-anchor="end">${v * 100}%</text><text class="axis" x="${X(v)}" y="${Ht - 20}" text-anchor="middle">${v * 100}%</text>`).join('');
